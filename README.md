@@ -15,7 +15,7 @@ This is the main repo of the stock manager.
 
 ### Requirements
 
-- [Docker repository](https://github.com/PerezRaul/docker) ( `stock-manager` branch )
+- [Docker repository](https://github.com/PerezRaul/docker/tree/stock-manager) ( `stock-manager` branch )
 
 ### Installation
 1. Add `127.0.0.1 stock-manager.localhost` on `/etc/hosts`.
