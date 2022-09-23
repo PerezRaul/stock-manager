@@ -1,0 +1,60 @@
+# Products get
+GET {{host}}/products
+Accept: application/json
+Content-Type: application/json
+
+{
+    "per_page": 20,
+    "page": 1
+}
+
+###
+
+# Product put
+PUT {{host}}/products/8e31421d-79ec-4349-8604-c1657221feb6
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "PENDIENTE INDIVIDUAL LYN"
+}
+
+###
+
+# Product get by id
+GET {{host}}/products/8e31421d-79ec-4349-8604-c1657221feb6
+Accept: application/json
+Content-Type: application/json
+
+{
+    "per_page": 20,
+    "page": 1
+}
+
+###
+
+# Product stock movement put of product
+PUT {{host}}/movements/e567dd9e-3827-4793-9cb1-a1c06597678d
+Accept: application/json
+Content-Type: application/json
+
+{
+    "product_id": "8e31421d-79ec-4349-8604-c1657221feb6",
+    "type": "sale",
+    "amount": 8
+}
+
+###
+
+# Product stock movements of product
+GET {{host}}/movements
+Accept: application/json
+Content-Type: application/json
+
+{
+    "product_id": "8e31421d-79ec-4349-8604-c1657221feb6",
+    "per_page": 20,
+    "page": 1
+}
+
+###
